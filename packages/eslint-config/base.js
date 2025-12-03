@@ -1,0 +1,23 @@
+/**  @type {import("typescript").CompilerOptions} */
+const baseTsConfig = {
+  $schema: "https://json.schemastore.org/tsconfig",
+  compilerOptions: {
+    declaration: true,
+    declarationMap: true,
+    esModuleInterop: true,
+    incremental: false,
+    isolatedModules: true,
+    lib: ["ES2022", "DOM", "DOM.Iterable"],
+    module: "NodeNext",
+    moduleDetection: "force",
+    moduleResolution: "NodeNext",
+    noUncheckedIndexedAccess: true,
+    resolveJsonModule: true,
+    skipLibCheck: true,
+    strict: true,
+    target: "ES2022",
+  },
+};
+
+module.exports = baseTsConfig;   // for CommonJS
+// or: export default baseTsConfig;  // if your package uses "type": "module"
