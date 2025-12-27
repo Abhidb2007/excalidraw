@@ -9,6 +9,10 @@ const app = express();
 app.use(express.json());
 
 app.post("/signup", (req, res) => {
+    //db call
+    res.json({
+        userId:123
+    })
 	
 });
 
@@ -21,6 +25,10 @@ app.post("/signin", (req, res) => {
 });
 
 app.post("/room", middleware, (req, res) => {
+    //db call
+    res.json({
+        roomId:123
+    })
 	
 });
 
