@@ -11,7 +11,7 @@ app.use(express.json());
 app.post("/signup", (req, res) => {
     //db call
     res.json({
-        userId:126
+        userId:122
     })
 	
 });
