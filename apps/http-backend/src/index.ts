@@ -9,9 +9,9 @@ const app = express();
 app.use(express.json());
 
 app.post("/signup", (req, res) => {
-    //db call
+    
     res.json({
-        userId:122
+        userId:123
     })
 	
 });
